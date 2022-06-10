@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+   <style type="text/css">
+    .table{
+        height:800px;
+        width:800px;
+        border:1px; 
+      
+    }
+   </style>
+</head>
+
+<body>
+<table id="ABC"> </table>
+<table id="ABCD"></table>
+
+            <script type="text/javascript">
+             function myF(){
+                 var text="";
+                    var a= prompt("enter the value of row")
+                    var b= prompt("enter the value of column")
+                        for (i=0;i<a;i++)
+                        {
+                        //2 document.write("<tr>");
+                            text+="<tr>";
+                        for (j=0;j<b;j++)
+                        {
+                            // document.write("<td width='200' height='200' bgcolor='blue'> </td>")
+                            text+="<td width='200' height='200' bgcolor='blue'> </td>";
+                        }
+                            // document.write("</tr>")
+                            text+="</tr>"
+                        }
+                 return text
+                }
+                document.getElementById("ABC").innerHTML = myF();
+                </script>
+</body>
+</html>
